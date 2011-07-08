@@ -1,7 +1,9 @@
 " Turn off any vi compatibility
 set nocompatible
-
 set shortmess+=I        " Don't show the Vim welcome screen
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 "Enable syntax highlightning and some nice filetype associations
 syntax enable
