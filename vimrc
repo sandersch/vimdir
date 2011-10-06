@@ -49,6 +49,8 @@ set softtabstop=4       " Edit as if tabs are 4 characters wide.
 set shiftwidth=4        " Number of spaces to use for indent and unindent.
 set shiftround          " Round indent to a multiple of 'shiftwidth'.
 
+set wildmode=list:longest,full
+
 " Care about case only if I use an uppercase letter
 set ignorecase
 set smartcase
