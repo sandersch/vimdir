@@ -1,4 +1,4 @@
-* Installation:
+# Installation:
 
     cd ~
     git clone http://github.com/sandersch/vimdir.git ~/.vim
