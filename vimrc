@@ -227,3 +227,6 @@ if !exists(":DiffOrig")
         \ | wincmd p | diffthis
 endif
 
+" Close current buffer without closing window.
+"
+command! Bd enew<Bar>bd #
