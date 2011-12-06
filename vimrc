@@ -50,6 +50,7 @@ set shiftwidth=4        " Number of spaces to use for indent and unindent.
 set shiftround          " Round indent to a multiple of 'shiftwidth'.
 
 set wildmode=list:longest,full
+set wildmenu
 
 " Care about case only if I use an uppercase letter
 set ignorecase
