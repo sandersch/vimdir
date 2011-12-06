@@ -82,44 +82,19 @@ set whichwrap+=<,>,[,]
 set listchars=tab:>-,trail:·
 set list
 
+" Update the swap file every 20 characters. I don't like to lose stuff.
+"
+set updatecount=20
+
+" Source other settings from files
+"
+"
+
 " Load custom file type extensions
 source $HOME/.vim/myfiletypes.vim
 
-" Prepend OS-appropriate temporary directories to the backupdir list.
-"
-if has("unix") " (including OS X)
-
-    " Remove the current directory from the backup directory list.
-    "
-    set backupdir-=.
-
-    " Save backup files in the current user's ~/tmp directory, or in the
-    " system /tmp directory if that's not possible.
-    "
-    set backupdir^=~/tmp,/tmp
-
-    " Try to put swap files in ~/tmp (using the munged full pathname of
-    " the file to ensure uniqueness). Use the same directory as the
-    " current file if ~/tmp isn't available.
-    "
-    set directory=~/tmp/,/var/tmp/.
-
-elseif has("win32")
-
-    " Remove the current directory from the backup directory list.
-    "
-    set backupdir-=.
-
-    " Save backup files in the current user's TEMP directory
-    " (that is, whatever the TEMP environment variable is set to).
-    "
-    set backupdir^=$TEMP
-
-    " Put swap files in TEMP, too.
-    "
-    set directory=$TEMP\\\\
-
-endif
+" Load platform specific settings
+source $HOME/.vim/platform_setup.vim
 
 "
 " Key Mappings
@@ -218,6 +193,16 @@ nnoremap g#  g#zz
 "
 imap <C-F>  <C-O><C-F>
 imap <C-B>  <C-O><C-B>
+
+" Q formats the current/highlighted paragraph.
+nnoremap Q  gwap
+xnoremap Q  gw
+vnoremap Q  gw
+
+" Make page-forward and page-backward work in insert mode.
+"
+inoremap <C-F>  <C-O><C-F>
+inoremap <C-B>  <C-O><C-B>
 
 "
 " Commands
