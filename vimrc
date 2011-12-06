@@ -78,6 +78,9 @@ set keymodel=startsel,stopsel
 
 set whichwrap+=<,>,[,]
 
+set listchars=tab:>-,trail:·
+set list
+
 " Load custom file type extensions
 source $HOME/.vim/myfiletypes.vim
 
