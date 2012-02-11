@@ -9,6 +9,7 @@ call pathogen#helptags()
 "Enable syntax highlightning and some nice filetype associations
 syntax enable
 filetype plugin indent on
+colorscheme gummybears
 
 " Set console highlights to be readable with black background
 set bg=dark
@@ -18,7 +19,6 @@ hi Normal guibg=black guifg=white
 
 " Make pasting work much better
 nmap <silent> <S-Insert> :set paste<CR>"*p:set nopaste<CR>
-" TODO: map shift+ins instead
 
 set autoindent          " Copy indent from current line for new line
 set nosmartindent       " 'smartindent' breaks right-shifting of # lines
@@ -205,6 +205,9 @@ vnoremap Q  gw
 "
 inoremap <C-F>  <C-O><C-F>
 inoremap <C-B>  <C-O><C-B>
+
+" Turn On/Off NERDTree
+map <leader>n :NERDTreeToggle<CR>
 
 "
 " Commands
