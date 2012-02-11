@@ -1,6 +1,7 @@
 " Turn off any vi compatibility
 set nocompatible
 set shortmess+=I        " Don't show the Vim welcome screen
+let mapleader=","       " Set this early in case other things use it
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -48,6 +49,7 @@ set tabstop=4           " Set the visible width of tabs.
 set softtabstop=4       " Edit as if tabs are 4 characters wide.
 set shiftwidth=4        " Number of spaces to use for indent and unindent.
 set shiftround          " Round indent to a multiple of 'shiftwidth'.
+set showcmd             " Letting me know I'm in 'leader' mode
 
 set wildmode=list:longest,full
 set wildmenu
