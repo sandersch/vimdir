@@ -46,3 +46,7 @@
 	path = bundle/vim-gummybears-colorscheme
 	url = https://github.com/jelera/vim-gummybears-colorscheme
     ignore = dirty
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+    ignore = dirty
