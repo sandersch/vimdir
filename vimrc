@@ -157,8 +157,8 @@ vnoremap <S-F7>  J
 " highlight after changing the indentation). Works for both Visual and Select
 " modes.
 "
-vmap <Tab>    >gv
-vmap <S-Tab>  <gv
+vmap >    >gv
+vmap <  <gv
 
 " Draw lines of dashes or equal signs below us based on the length of the current line 
 "
