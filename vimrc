@@ -54,6 +54,8 @@ set showcmd             " Letting me know I'm in 'leader' mode
 set wildmode=list:longest,full
 set wildmenu
 
+set virtualedit=block
+
 " Care about case only if I use an uppercase letter
 set ignorecase
 set smartcase
