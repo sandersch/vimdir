@@ -9,35 +9,6 @@ inoremap kj <esc>l
 inoremap jj <esc>l
 inoremap kk <esc>l
 
-" Backspace in Visual mode deletes selection.
-"
-vnoremap <BS> d
-
-" Control+A is Select All.
-"
-noremap  <C-A>  gggH<C-O>G
-inoremap <C-A>  <C-O>gg<C-O>gH<C-O>G
-cnoremap <C-A>  <C-C>gggH<C-O>G
-onoremap <C-A>  <C-C>gggH<C-O>G
-snoremap <C-A>  <C-C>gggH<C-O>G
-xnoremap <C-A>  <C-C>ggVG
-
-" Control+S saves the current file (if it's been changed).
-"
-noremap  <C-S>  :update<CR>
-vnoremap <C-S>  <C-C>:update<CR>
-inoremap <C-S>  <C-O>:update<CR>
-
-" Control+Z is Undo, in Normal and Insert mode.
-"
-noremap  <C-Z>  u
-inoremap <C-Z>  <C-O>u
-
-" Control+Y is Redo (but not repeat) in Normal and Insert mode.
-"
-noremap  <C-Y>  <C-R>
-inoremap <C-Y>  <C-O><C-R>
-
 " F2 inserts the date and time at the cursor.
 "
 inoremap <F2>   <C-R>=strftime("%c")<CR>
@@ -97,17 +68,7 @@ nnoremap *   *zz
 nnoremap #   #zz
 nnoremap g*  g*zz
 nnoremap g#  g#zz
-
-" Make page-forward and page-backward work in insert mode.
 "
-imap <C-F>  <C-O><C-F>
-imap <C-B>  <C-O><C-B>
-
-" Q formats the current/highlighted paragraph.
-nnoremap Q  gwap
-xnoremap Q  gw
-vnoremap Q  gw
-
 " Make page-forward and page-backward work in insert mode.
 "
 inoremap <C-F>  <C-O><C-F>
