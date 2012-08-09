@@ -2,6 +2,13 @@
 " Key Mappings
 "
 
+"
+" Map j/k combos to get out of insert mode
+inoremap jk <esc>l
+inoremap kj <esc>l
+inoremap jj <esc>l
+inoremap kk <esc>l
+
 " Backspace in Visual mode deletes selection.
 "
 vnoremap <BS> d
