@@ -13,3 +13,8 @@ endif
 " Close current buffer without closing window.
 "
 command! Bd enew<Bar>bd #
+
+cabbrev Q quit
+cabbrev W write
+cabbrev Wq wq
+cabbrev WQ wq
