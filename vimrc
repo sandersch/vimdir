@@ -23,7 +23,7 @@ nmap <silent> <S-Insert> :set paste<CR>"*p:set nopaste<CR>
 set autoindent          " Copy indent from current line for new line
 set nosmartindent       " 'smartindent' breaks right-shifting of # lines
 
-set history=500         " Remember this many commands
+set history=10000       " Remember this many commands
 
 set number              " Display line numbers
 set numberwidth=4       " Minimum number of columns to show for line numbers
