@@ -62,3 +62,6 @@
 	path = bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
     ignore = dirty
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
