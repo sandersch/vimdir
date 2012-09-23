@@ -18,7 +18,7 @@ set bg=dark
 hi Normal guibg=black guifg=white
 
 " Make pasting work much better
-nmap <silent> <S-Insert> :set paste<CR>"*p:set nopaste<CR>
+nmap <silent> <S-Insert> :set paste<CR>"+p:set nopaste<CR>
 
 set autoindent          " Copy indent from current line for new line
 set nosmartindent       " 'smartindent' breaks right-shifting of # lines
