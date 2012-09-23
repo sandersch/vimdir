@@ -96,6 +96,9 @@ source $HOME/.vim/myfiletypes.vim
 " Load platform specific settings
 source $HOME/.vim/platform_setup.vim
 
+" Load abbreviations
+source $HOME/.vim/abbreviations.vim
+
 " Load key mappings
 source $HOME/.vim/key_maps.vim
 
