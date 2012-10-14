@@ -14,26 +14,11 @@ inoremap kk <esc>l
 inoremap <F2>   <C-R>=strftime("%c")<CR>
 nmap     <F2>   a<F2><Esc>
 
-" F7 formats the current/highlighted paragraph.
-"
-" XXX: Consider changing this to gwap to maintain logical cursor position.
-"
-nnoremap <F7>   gqap
-inoremap <F7>   <C-O>gqap
-vnoremap <F7>   gq
-
-" Shift+F7 joins all lines of the current paragraph or highlighted block
-" into a single line.
-"
-nnoremap <S-F7>  vipJ
-inoremap <S-F7>  <Esc>vipJi
-vnoremap <S-F7>  J
-
 " Tab/Shift+Tab indent/unindent the highlighted block (and maintain the
 " highlight after changing the indentation). Works for both Visual and Select
 " modes.
 "
-vmap >    >gv
+vmap >  >gv
 vmap <  <gv
 
 " Draw lines of dashes or equal signs below us based on the length of the current line 
@@ -51,11 +36,6 @@ vmap <  <gv
 "
 inoremap <C-U>- <Esc>yyp^v$r-ja
 inoremap <C-U>= <Esc>yyp^v$r=ja
-
-" Control+Hyphen (yes, I know it says underscore) repeats the character above
-" the cursor.
-"
-inoremap <C-_>  <C-Y>
 
 " Center the display line after searches. (This makes it *much* easier to see
 " the matched line.)
